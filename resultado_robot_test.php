@@ -8,19 +8,9 @@ $teste = '0';
 $arquivo = $_SESSION['arquivo'];
 
 #############################teste
-if ($handle = opendir('.')) {
-    while (false !== ($entry = readdir($handle))) {
-        if ($entry != "." && $entry != "..") {
-		if ($entry == $numeros.".png") {
-			$teste = '1';
-		}
-        }
-    }
-    closedir($handle);
-}
 #########################
 
-if ($teste == '1') {
+if ($numeros.".png" == $arquivo) { 
  
  
  	echo '<!DOCTYPE html>
